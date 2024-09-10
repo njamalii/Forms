@@ -1,0 +1,48 @@
+html,body{
+    border:blue 2px double;
+    background-color: rgb(13, 121, 85);
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(6, 6, 106);
+}
+legend{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(6, 6, 106);
+}
+label{
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+.inputs{
+    border-radius: 10px;
+    height:30px;
+    background-color: aquamarine;
+}
+.inputs:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+.buttons{
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: 320px;
+    margin-top:20px;
+    color:rgb(6, 6, 106);
+    background-color: blueviolet;
+    font-weight: bold;
+}
+.buttons:hover{
+    background-color: yellowgreen;
+    color:blue;
+    border:solid 2px red;
+}

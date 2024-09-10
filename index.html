@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sign-up Form</h1>
+    <form method="get" autocomplete="off">
+       <fieldset>
+           <legend>Personal Information</legend>
+           <label for="fname">First Name:</label>
+           <input type="text" id="fname" name="FirstName" placeholder="Enter your name" maxlength="15" autofocus class="inputs">
+           <br/>
+           <label for="lname">Surname:</label>
+           <input type="text" id="lname" name="surname" placeholder="Enter your surname" maxlength="20" required class="inputs">
+           <br/>
+           <label for="tele">Phone Number:</label>
+           <input type="tel" id="tele" name="phone" placeholder="E.g:0911-27272733" maxlength="15" pattern="[0-9]{4}-[0-9]{8}" required class="inputs">
+           <br/>
+           <label for="emails">Email:</label>
+           <input type="email" id="emails" name="email" placeholder="E.g:abc@gmail.com" required class="inputs">
+           <br/>
+           <label for="passes">Password:</label>
+           <input type="password" id="passes" name="password" placeholder="Enter your password" maxlength="6" required class="inputs">
+           <br/>
+           <label for="cpass">Confirm Password:</label>
+           <input type="password" id="cpass" name="confirm password" placeholder="Re-enter your password" maxlength="6" required class="inputs">
+           <br/>
+           <label for="genders">Your Gender:</label>
+           <input type="radio" id="genders" name="gender">
+           <label>Female</label>
+           <input type="radio" id="genders" name="gender">
+           <label>Male</label>
+           <br/>
+       </fieldset>
+       <fieldset>
+           <legend>Further Information</legend>
+           <label for="favcolor">Favorite Color:</label>
+           <br/>
+           <input type="color" id="favcolor" name="Color" class="inputs">
+           <br/>
+           <label for="birth">Date of Birth:</label>
+           <br/>
+           <input type="date" id="birth" name="Birth" required class="inputs">
+           <br/>
+           <label for="cars">Your favorite Car:</label>
+           <br/>
+           <select id="cars" name="Car" class="inputs">
+              <option value="volvo">Volvo</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi" selected>Audi</option>
+           </select>
+           <br/>
+           <label for="age">Your Age range(between 10-90):</label>
+           <br/>
+           <input type="range" id="age" name="Age" min="10" max="90" class="inputs">
+       </fieldset>       
+       <input type="submit" class="buttons">
+       <input type="reset" class="buttons">
+    </form>
+</body>
+</html>
